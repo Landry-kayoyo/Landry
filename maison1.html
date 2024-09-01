@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Page with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .column {
+            float: left;
+            width: 100%;
+            padding: 7px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .gap {
+            margin-top: 20px;
+        }
+        .logo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-image: url('logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="logo"></div>
+    <div class="row gap">
+        <div class="column"> 
+            <img src="/storage/emulated/0/HTML/Maison/types-de-maison.jpg" alt="Image 1"><tr>
+                  <p>bon</p>    
+            <img src="/storage/emulated/0/HTML/Maison/cfb846bc2ed10f32451ddc46876ecddf_6ad3ac9dac8481578170d05126689efabe149bd1.jpeg" alt="Image 2"><tr>
+      <p>bon</p>    
+            <img src="/storage/emulated/0/HTML/Maison/milele-villas.jpg" alt="Image 3">
+        </div>
+        <div class="column">
+            <img src="/storage/emulated/0/HTML/Maison/71.jpg" alt="Image 4">
+            <img src="/storage/emulated/0/HTML/Maison/bbb.jpg" alt="Image 5">
+            <img src="/storage/emulated/0/HTML/Maison/quelles-sont-les-differents-types-de-maisons.jpg" alt="Image 6">
+        </div>
+    </div>
+    <a href="/storage/emulated/0/HTML/Accueil.html" ><button>Acceuil</button></a>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page avec Image et Boutons</title>
+<style>
+
+body {
+    background-color: #0d1117; /* Couleur bleue de nuit */
+    color: white;
+}
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 360px;
+    height: auto;
+    margin-top: 1px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+  }
+  .button-connexion {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 99; /* Assure que le bouton reste au-dessus du contenu */
+  }
+  
+  .button-Acceuil {
+    position: fixed;
+    top: 5px;
+    right: 140px;
+    index: 50; /* Assure que le bouton reste au-dessus du contenu */
+  }
+  
+  .connexion {
+    padding: 5px 2px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .Propriete {
+    padding: 5px 2px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+.Acceuil{
+  padding: 5px 2px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.apropo{
+  padding: 5px 2px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+</body>
+<div class="button-connexion">
+<a href="/storage/emulated/0/HTML/Connexion.html" >  <button class="connexion">Connexion</button></a>
+</div>
+<div>
+  <div class="button-Acceuil">
+<button class= "Acceuil">Acceuil</button>
+<a href="/storage/emulated/0/HTML/À-Propos de nous.html" ><button class="apropo">About us</button></a>
+<button class="Propriete">Propriete</button>
+</div>
+  <div class="button-container">
+
+      <img src="/storage/emulated/0/HTML/ecommerce.jpg" alt="Image">
+
+</div>
+<tr>
+<a href="/storage/emulated/0/HTML/maison1.html" ><button><strong>DECOUVREZ LE PRODUITS ICI</strong> </button></a>
+</tr>
+</body>
+</html>

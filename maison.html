@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diaporama d'Images</title>
+<style>
+  .slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<a href="/storage/emulated/0/HTML/Accueil.html" ><button>Acceuil</button></a>
+<p><strong>RECENT</strong></p>
+<div class="slideshow">
+  <img id="image" src="" alt="Image">
+</div>
+<td>
+<tr>
+<button><strong>Villa</button></strong><tr><tr>
+<button><strong>Maison tradutionelle</strong></button><tr>
+<button><strong>D'autres sugestions</strong></button>
+</td>
+</tr>
+<script>
+  const images = ['/storage/emulated/0/HTML/Maison/2d1.jpg', '/storage/emulated/0/HTML/Maison/71.jpg', '/storage/emulated/0/HTML/Maison/93bc6b427c91937f5d1cbfffc89c07d7_214f0723e16f050db6b90c408ae09b7471f89aac.jpeg',]; // Ajoutez ici les noms de vos images
+  let index = 0;
+  const imageElement = document.getElementById('image');
+
+  function changeImage() {
+    imageElement.src = images[index];
+    index = (index + 1) % images.length;
+  }
+
+  setInterval(changeImage, 3000); // Change l'image toutes les 1.5 secondes
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de Paiement Airtel Money</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        input[type="text"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<img src="/storage/emulated/0/HTML/AIRTEL-MONEY-APP23.jpg" alt="33" width="280">
+    <div class="container">
+        <h2> Airtel Money</h2>
+        <form action="/storage/emulated/0/HTML/Airtel notification.html" method="POST">
+            <label for="name">Votre Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Numéro de Téléphone Airtel:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Exemple: 0991234567">
+
+            <label for="amount">Montant à Payer (CDF):</label>
+            <input type="text" id="amount" name="amount" required pattern="[0-9]*">
+          <a href="/storage/emulated/0/HTML/Airtel notification.html" >  <button>Envoyer</button></a>
+          <a href="/storage/emulated/0/HTML/Payer avec.html" >  <strong>Retour</strong></a>
+            </form>
+            </div>
+            </body>
+            </html>
+            
+           
